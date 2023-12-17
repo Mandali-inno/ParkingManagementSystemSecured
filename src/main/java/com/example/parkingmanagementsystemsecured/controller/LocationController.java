@@ -28,7 +28,7 @@ public class LocationController {
     @GetMapping("/")
     public String someMethod() {
 
-        return"navBar";
+        return"redirect:/locationPage";
     }
     @GetMapping("/locationPage")
     public  String homePage(@ModelAttribute("location") Location location, Model model){
